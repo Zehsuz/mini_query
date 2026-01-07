@@ -1,4 +1,4 @@
-export 'src/data/models/auth_model.dart';
+export 'src/data/models/user_model.dart';
 
 export "src/data/storage/storage.dart";
 
