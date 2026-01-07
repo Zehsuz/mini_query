@@ -19,7 +19,6 @@ class Client implements Repository {
   Future<AuthModel> login({
     required String email,
     required String password,
-    required String passwordConfirm,
   }) async {
     Response response = await _dio.post(
       '${_storage.apiURL}/users/auth-with-password',

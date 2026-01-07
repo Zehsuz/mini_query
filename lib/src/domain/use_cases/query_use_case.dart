@@ -29,13 +29,11 @@ class QueryUseCase {
     required void Function(String) onError,
     required String email,
     required String password,
-    required String passwordConfirm,
   }) async {
     await _helper.request(
       request: () => _client.login(
         email: email,
         password: password,
-        passwordConfirm: passwordConfirm,
       ),
       onResponse: onResponse,
       onError: onError,
